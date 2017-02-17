@@ -14,19 +14,19 @@ There should be an index to capture your data
 ```
 curl -X PUT localhost:9200/elk-demo -d@person_index.json
 ```
-Optional: To check if the index was created, query the list of indices 
-```
-curl -X GET localhost:9200/_cat/indices?v
-```
-Optional: Also verify if the index  
+Optional: To check if the index was created, query the index 
 ```
 curl -X GET localhost:9200/elk-demo?pretty
 ```
-
-## 3. Now insert test values into kibana
+Optional: To list all indices in elasticsearch
 ```
-curl -X POST localhost:9200/elk-demo -d@testdata/person1.json
-curl -X POST localhost:9200/elk-demo -d@testdata/person2.json
+curl -X GET localhost:9200/_cat/indices?v
+```
+
+## 3. Now insert test values into elasticsearch 
+```
+curl -X POST localhost:9200/elk-demo/person -d@testdata/person1.json
+curl -X POST localhost:9200/elk-demo/person -d@testdata/person2.json
 
 ```
 
