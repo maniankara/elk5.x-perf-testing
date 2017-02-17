@@ -1,0 +1,26 @@
+{
+  "settings" : {
+    "number_of_shards" : 1
+  },
+  "mappings" : {
+    "elk-demo" : {
+      "properties" : {
+        "firstname" : {
+          "type" : "text"
+        },
+        "lastname" : {
+          "type" : "text"
+        },
+        "age" : {
+          "type" : "integer"
+        },
+        "height" : {
+          "type" : "float"
+        },
+        "weight" : {
+          "type" : "float"
+        }
+      }
+    }
+  }
+}
