@@ -4,9 +4,14 @@ This uses [deviantony/docker-elk](https://github.com/deviantony/docker-elk) repo
 
 ## 1. Start elk stack 
 To start elk stack, run the `docker-compose` with compose file 
-under _docker-elk/_ and also from the root directory
+under _docker-elk/_ and also from the root directory. 
+Due to [this](https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html#docker-cli-run-prod-mode), 
+we need to set the `vm_max_map_count` 
+kernel setting needs to be set to at least 262144 
 ```
-docker-compose -f docker-elk/docker-compose.yml -f docker-compose.override.yml
+sysctl -w vm.max_map_count=262144;
+
+docker-compose -f docker-elk/docker-compose.yml -f docker-compose.override.yml up -d
 ```
 
 ## 2. Create elk-demo index in elasticsearch
