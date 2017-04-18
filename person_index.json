@@ -19,6 +19,9 @@
         },
         "weight" : {
           "type" : "float"
+        },
+        "@timestamp" : {
+          "type" : "date"
         }
       }
     }
