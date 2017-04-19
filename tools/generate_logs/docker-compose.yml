@@ -1,0 +1,20 @@
+version: '2'
+
+services:
+
+  web:
+    image: nginx
+    ports:
+      - "8080:80"
+
+  filebeat:
+    image: olinicola/filebeat:1.2.3
+    volumes:
+      - ./filebeat.yml:/etc/filebeat/filebeat.yml
+    depends_on:
+      - web
+
+networks:
+  default:
+    external:
+      name: dockerelk_docker_elk
