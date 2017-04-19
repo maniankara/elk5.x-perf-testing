@@ -9,7 +9,7 @@ Due to [this](https://www.elastic.co/guide/en/elasticsearch/reference/current/do
 we need to set the `vm_max_map_count` 
 kernel setting needs to be set to at least 262144 
 ```
-sysctl -w vm.max_map_count=262144;
+sudo sysctl -w vm.max_map_count=262144;
 
 docker-compose -f docker-elk/docker-compose.yml -f docker-compose.override.yml up -d
 ```
