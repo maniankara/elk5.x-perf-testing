@@ -1,7 +1,7 @@
-FROM httpd:2.4
+FROM nginx
 
 MAINTAINER Anoop Vijayan Maniankara<maniankara@gmail.com>
 
-RUN /usr/local/apache2/bin/httpd -k start
+RUN rm /var/log/nginx/access.log /var/log/nginx/error.log && \
+    touch /var/log/nginx/access.log /var/log/nginx/error.log
 
-CMD ["tail", "-f", "/dev/null"]

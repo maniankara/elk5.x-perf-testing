@@ -3,14 +3,17 @@ version: '2'
 services:
 
   web:
-    image: nginx
+    build: .
     ports:
       - "8080:80"
+    volumes:
+      - nginx-logs:/var/log/nginx
 
   filebeat:
     image: olinicola/filebeat:1.2.3
     volumes:
       - ./filebeat.yml:/etc/filebeat/filebeat.yml
+      - nginx-logs:/var/log/nginx
     depends_on:
       - web
 
@@ -18,3 +21,7 @@ networks:
   default:
     external:
       name: dockerelk_docker_elk
+
+# named volumes
+volumes:
+  nginx-logs:
