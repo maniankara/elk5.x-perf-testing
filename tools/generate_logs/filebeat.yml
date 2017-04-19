@@ -8,8 +8,8 @@ filebeat:
             paths:
                 - "/var/log/nginx/error.log"
             document_type: nginx-error
-    output:
-        logstash:
-            enabled: true
-            hosts: ["logstash:5000"]
-            index: logstash
+output:
+    logstash:
+        enabled: true
+        hosts: ["logstash:5000"]
+        index: logstash
