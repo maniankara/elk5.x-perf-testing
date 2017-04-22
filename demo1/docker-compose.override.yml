@@ -1,0 +1,32 @@
+version: '2'
+
+services:
+  logstash:
+    volumes:
+      - ../demo1/logstash/logstash.conf:/usr/share/logstash/pipeline/logstash.conf
+
+  web:
+    build: ../demo1/nginx/
+    ports:
+      - "8080:80"
+    volumes:
+      - nginx-logs:/var/log/nginx
+
+  filebeat:
+    image: olinicola/filebeat:1.2.3
+    volumes:
+      - ../demo1/filebeat/filebeat.yml:/etc/filebeat/filebeat.yml
+      - nginx-logs:/var/log/nginx
+    depends_on:
+      - elasticsearch
+      - logstash
+      - kibana
+
+# named volumes
+volumes:
+  nginx-logs:
+
+networks:
+  default:
+    external:
+      name: dockerelk_elk

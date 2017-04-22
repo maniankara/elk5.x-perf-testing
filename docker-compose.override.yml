@@ -3,4 +3,4 @@ version: '2'
 services:
   logstash:
     volumes:
-      - ../logstash-config:/etc/logstash/conf.d
+      - ../logstash-config/logstash.conf:/usr/share/logstash/pipeline/logstash.conf
