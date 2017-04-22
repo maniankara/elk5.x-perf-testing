@@ -12,12 +12,12 @@ kernel setting needs to be set to at least 262144
 sudo sysctl -w vm.max_map_count=262144;
 ```
 
-## a. Quick start for novices
+## A. Quick start for novices
 ``` 
 ./elk.sh up -d
 ```
 
-## b. Know what you are doing
+## B. Know what you are doing
 
 #### 1. Start elk stack 
 To start elk stack, run the `docker-compose` with compose file 
@@ -54,7 +54,7 @@ curl -X POST localhost:9200/elk-demo/person -d@testdata/person2.json
  provide `elk-demo` and press _create_. 
  Now choose the _Discover_ tab in the left top corner to see your events 
  
- ## c. Debugging
+ ## C. Debugging
  
  #### Docker compose commands
 ```./elk.sh up -d``` - Create and start containers
@@ -74,5 +74,8 @@ curl -X POST localhost:9200/elk-demo/person -d@testdata/person2.json
 ```./elk.sh show 1``` - Show an elasticsearch index elk-demo1
 
 ```./elk.sh delete 1``` - Delete an elasticsearch index elk-demo1
+
+#### Tools
+
 
  
