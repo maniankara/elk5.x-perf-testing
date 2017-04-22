@@ -50,7 +50,29 @@ curl -X POST localhost:9200/elk-demo/person -d@testdata/person2.json
  Open Kibana from your browser at 
  [http://localhost:5601/](http://localhost:5601/)
  
- One time configuration: In the _index name or pattern_ field, 
+ **One time configuration**: In the _index name or pattern_ field, 
  provide `elk-demo` and press _create_. 
  Now choose the _Discover_ tab in the left top corner to see your events 
+ 
+ ## c. Debugging
+ 
+ #### Docker compose commands
+```./elk.sh up -d``` - Create and start containers
+
+```./elk.sh exec <service name> bash``` - Connect to bash shell into container
+
+```./elk.sh ps``` - List container statuses
+
+```./elk.sh down``` - Stop and remove containers
+ 
+
+#### Elasticsearch index commands
+```./elk.sh new 1``` - Create a new elastic search index running elk-demo1
+
+```./elk.sh ls``` - List all elasticsearch indices
+
+```./elk.sh show 1``` - Show an elasticsearch index elk-demo1
+
+```./elk.sh delete 1``` - Delete an elasticsearch index elk-demo1
+
  
