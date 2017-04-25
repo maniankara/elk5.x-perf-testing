@@ -56,6 +56,12 @@ curl -X POST localhost:9200/elk-demo/person -d@testdata/person2.json
  
  ## C. Debugging
  
+ #### Help
+```./elk.sh -h``` - Help for this script
+
+```./elk.sh help``` - docker-compose help
+
+ 
  #### Docker compose commands
 ```./elk.sh up -d``` - Create and start containers
 
