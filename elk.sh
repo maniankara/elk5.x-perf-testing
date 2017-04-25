@@ -7,7 +7,7 @@ function docker {
 # Create an elasticsearch index
 function new {
     shift;
-    curl -X PUT localhost:9200/elk-demo$1 -d@../person_index.json;
+    curl -X PUT localhost:9200/elk-demo$1?pretty -d@$2;
 }
 
 # List an elasticsearch indices
@@ -25,7 +25,7 @@ function show {
 # Delete an elasticsearch index
 function delete {
     shift;
-    curl -X DELETE localhost:9200/elk-demo$1 ;
+    curl -X DELETE localhost:9200/elk-demo$1?pretty ;
 }
 
 function main {
