@@ -1,10 +1,18 @@
 {
   "script": {
-    "inline": "ctx._source.timestamp-start++",
-    "lang": "painless"
-  },
-  "query": {
-    "term": {
+    "inline": "ctx._source.timestampStart = Math.round(ctx._source['timestamp-start'] * 100)/100 * 1000",
+    "lang": "painless",
+    "params": {
+      "count": 1000
     }
   }
+,
+    "query" : {
+      "term" : {
+        "FORMATDEVICESIZE":65536016
+      }
+    }
 }
+
+
+// works with: curl -XPOST sandbox.srv.tuxera.com:9200/tuomas_test_inter/nixtest-perf-data/_update?pretty -d@update_by_query.json
