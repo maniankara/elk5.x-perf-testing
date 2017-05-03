@@ -17,6 +17,8 @@ function demo2 {
 function main {
     if [ $1 = "new" -o $1 = "delete" -o $1 = "list" -o $1 = "show" -o $1 = "demo2" ]; then
         $1 $*;
+    elif [ $1 = "-h" -o $1 = "--help" ]; then
+        usage;
     else
         docker $*;
     fi

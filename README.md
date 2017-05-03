@@ -56,6 +56,12 @@ curl -X POST localhost:9200/elk-demo/person -d@testdata/person2.json
  
  ## C. Debugging
  
+ #### Help
+```./elk.sh -h``` - Help for this script
+
+```./elk.sh help``` - docker-compose help
+
+ 
  #### Docker compose commands
 ```./elk.sh up -d``` - Create and start containers
 
@@ -67,7 +73,7 @@ curl -X POST localhost:9200/elk-demo/person -d@testdata/person2.json
  
 
 #### Elasticsearch index commands
-```./elk.sh new 1``` - Create a new elastic search index running elk-demo1
+```./elk.sh new 1 person.json``` - Create a new elastic search index _elk-demo1_ from file _person.json_
 
 ```./elk.sh ls``` - List all elasticsearch indices
 
