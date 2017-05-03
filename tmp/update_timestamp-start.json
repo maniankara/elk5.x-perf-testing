@@ -13,7 +13,7 @@
 
 
 // works with:
-  // curl -XPOST sandbox.srv.tuxera.com:9200/tuomas_test_inter/nixtest-perf-data/_update?pretty -d@update_by_query.json
-  // curl -XPOST sandbox.srv.tuxera.com:9200/tuomas_test_inter/nixtest-perf-data/AVuUkMtPyDOOMiKhqSvz/_update?pretty -d@update_by_query.json
-  // curl -XPOST sandbox.srv.tuxera.com:9200/tuomas_test_inter/_update_by_query?pretty -d@update_by_query.json
-  //
+  // curl -XPOST sandbox:9200/tuomas_test_inter/nixtest-perf-data/_update?pretty -d@update_by_query.json
+  // curl -XPOST sandbox:9200/tuomas_test_inter/nixtest-perf-data/AVuUkMtPyDOOMiKhqSvz/_update?pretty -d@update_by_query.json
+  // curl -XPOST sandbox:9200/tuomas_test_inter/_update_by_query?pretty -d@update_by_query.json
+  // curl -XPOST sandbox:9200/tuomas_test_inter/_update_by_query?pretty -d@update_timestamp-start.json
