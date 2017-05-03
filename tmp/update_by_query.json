@@ -1,0 +1,10 @@
+{
+  "script": {
+    "inline": "ctx._source.timestamp-start++",
+    "lang": "painless"
+  },
+  "query": {
+    "term": {
+    }
+  }
+}

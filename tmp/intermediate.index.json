@@ -1,0 +1,827 @@
+{
+  "settings" : {
+    "number_of_shards" : 1
+  },
+  "mappings" : {
+    "nixtest-perf-data": {
+      "properties": {
+        "CACHEDIOSECREAL4M": {
+          "type": "float"
+        },
+        "CACHEDREADAVGREAL4M": {
+          "type": "float"
+        },
+        "CACHEDREADMAXREAL4M": {
+          "type": "float"
+        },
+        "CACHEDREADMINREAL4M": {
+          "type": "float"
+        },
+        "CACHEDWRITEAVGREAL4M": {
+          "type": "float"
+        },
+        "CACHEDWRITEMAXREAL4M": {
+          "type": "float"
+        },
+        "CACHEDWRITEMINREAL4M": {
+          "type": "float"
+        },
+        "EFFECTREADAVGDIO4M": {
+          "type": "float"
+        },
+        "EFFECTREADAVGREAL4M": {
+          "type": "float"
+        },
+        "EFFECTREADMAXDIO4M": {
+          "type": "float"
+        },
+        "EFFECTREADMAXREAL4M": {
+          "type": "float"
+        },
+        "EFFECTREADMINDIO4M": {
+          "type": "float"
+        },
+        "EFFECTREADMINREAL4M": {
+          "type": "float"
+        },
+        "EFFECTWRITEAVGDIO4M": {
+          "type": "float"
+        },
+        "EFFECTWRITEAVGREAL4M": {
+          "type": "float"
+        },
+        "EFFECTWRITEMAXDIO4M": {
+          "type": "float"
+        },
+        "EFFECTWRITEMAXREAL4M": {
+          "type": "float"
+        },
+        "EFFECTWRITEMINDIO4M": {
+          "type": "float"
+        },
+        "EFFECTWRITEMINREAL4M": {
+          "type": "float"
+        },
+        "FORMATDEVICESIZE": {
+          "type": "float"
+        },
+        "FSCKVERSION": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "HOSTNAMESYSTEM": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "MKFSVERSION": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "REALIOSECREAL4M": {
+          "type": "float"
+        },
+        "STRFS2TEST": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "STRFSTYPE": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "STRFSVERSION": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "STRMOUNTOPT": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "STRPOSIXCHFLAGS": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "STRPOSIXCHMOD": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "STRPOSIXCHOWN": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "STRPOSIXLINK": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "STRPOSIXMKDIR": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "STRPOSIXMKFIFO": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "STRPOSIXOPEN": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "STRPOSIXREADWRITE": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "STRPOSIXRENAME": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "STRPOSIXRMDIR": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "STRPOSIXSYMLINK": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "STRPOSIXTRUNCATE": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "STRPOSIXUNLINK": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "STRPOSIXXACL": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "STRTESTCOMMENT": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "TIMEBONNIE": {
+          "type": "float"
+        },
+        "TIMEBROWSE": {
+          "type": "float"
+        },
+        "TIMECOMPARELINUX": {
+          "type": "float"
+        },
+        "TIMECREATE50K": {
+          "type": "float"
+        },
+        "TIMEFALLOCATE": {
+          "type": "float"
+        },
+        "TIMEFALLOCATEWRITE": {
+          "type": "float"
+        },
+        "TIMEFALLOCATEWRITEMORE": {
+          "type": "float"
+        },
+        "TIMEFSXBIGGER": {
+          "type": "float"
+        },
+        "TIMEFSXSMALLER": {
+          "type": "float"
+        },
+        "TIMEFULLCHECK5K": {
+          "type": "float"
+        },
+        "TIMEIOZONEASYNC": {
+          "type": "float"
+        },
+        "TIMEIOZONESYNC": {
+          "type": "float"
+        },
+        "TIMELOOKUP50K": {
+          "type": "float"
+        },
+        "TIMELOOKUPLINUX": {
+          "type": "float"
+        },
+        "TIMERECOMPARELINUX": {
+          "type": "float"
+        },
+        "TIMERELOOKUP50K": {
+          "type": "float"
+        },
+        "TIMEREMOVELINUX": {
+          "type": "float"
+        },
+        "TIMERESYNCLINUX": {
+          "type": "float"
+        },
+        "TIMERSYNCLINUX": {
+          "type": "float"
+        },
+        "TIMESYNC_COMPARELINUX": {
+          "type": "float"
+        },
+        "TIMESYNC_CREATE50K": {
+          "type": "float"
+        },
+        "TIMESYNC_ENDOFTEST": {
+          "type": "float"
+        },
+        "TIMESYNC_FALLOCATEWRITE": {
+          "type": "float"
+        },
+        "TIMESYNC_FALLOCATEWRITEMORE": {
+          "type": "float"
+        },
+        "TIMESYNC_LOOKUP50K": {
+          "type": "float"
+        },
+        "TIMESYNC_LOOKUPLINUX": {
+          "type": "float"
+        },
+        "TIMESYNC_RELOOKUP50K": {
+          "type": "float"
+        },
+        "TIMESYNC_RESYNCLINUX": {
+          "type": "float"
+        },
+        "TIMESYNC_RSYNCLINUX": {
+          "type": "float"
+        },
+        "TIMESYNC_UNPACKLINUX": {
+          "type": "float"
+        },
+        "TIMETIOWRITE": {
+          "type": "float"
+        },
+        "TIMEUNPACKLINUX": {
+          "type": "float"
+        },
+        "TOTALBENCHTIME": {
+          "type": "float"
+        },
+        "TOTALTIME": {
+          "type": "float"
+        },
+        "TSVERSION": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "UNAMESYSTEM": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "jenkins-url": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "nixtest-args-arch": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "nixtest-args-fs": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "nixtest-args-gcov": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "nixtest-args-hw": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "nixtest-args-iteration": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "nixtest-args-kernel": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "nixtest-args-kernel-debug": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "nixtest-args-kernel-opts": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "nixtest-args-log-tag": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "nixtest-args-media": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "nixtest-args-release-build": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "nixtest-args-remote-builds": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "nixtest-args-test-opts": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "nixtest-args-testsuite": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "nixtest-repos-nixtest-commit": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "nixtest-repos-nixtest-tag": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "nixtest-repos-software/bench-commit": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "nixtest-repos-software/bench-tag": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "nixtest-repos-software/exfat-commit": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "nixtest-repos-software/exfat-tag": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "nixtest-repos-software/exfatprogs-commit": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "nixtest-repos-software/exfatprogs-tag": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "nixtest-repos-software/failsafe-commit": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "nixtest-repos-software/failsafe-tag": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "nixtest-repos-software/fatprogs-commit": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "nixtest-repos-software/fatprogs-tag": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "nixtest-repos-software/fstest-commit": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "nixtest-repos-software/fstest-tag": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "nixtest-repos-software/hfsplus-commit": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "nixtest-repos-software/hfsplus-tag": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "nixtest-repos-software/hfsprogs-commit": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "nixtest-repos-software/hfsprogs-tag": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "nixtest-repos-software/lifetime-commit": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "nixtest-repos-software/lifetime-tag": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "nixtest-repos-software/nixpkgs-commit": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "nixtest-repos-software/nixpkgs-tag": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "nixtest-repos-software/ntfs-commit": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "nixtest-repos-software/ntfs-tag": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "nixtest-repos-software/ntfsprogs-commit": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "nixtest-repos-software/ntfsprogs-tag": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "nixtest-repos-software/obsolete-kernels-commit": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "nixtest-repos-software/obsolete-kernels-tag": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "nixtest-repos-software/tffs-commit": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "nixtest-repos-software/tffs-tag": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "nixtest-repos-software/xfstests-commit": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "nixtest-repos-software/xfstests-tag": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "timestamp-end": {
+          "type": "float"
+        },
+        "timestamp-start": {
+          "type": "float"
+        },
+        "timestampEnd": {
+          "type": "date"
+        },
+        "timestampStart": {
+          "type": "date"
+        }
+      }
+    }
+  }
+}
