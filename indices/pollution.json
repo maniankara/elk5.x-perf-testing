@@ -15,28 +15,28 @@
           "type" : "geo_point"
         },
         "NO" : {
-          "type" : "keyword"
+          "type" : "float"
         },
         "NO2" : {
-          "type" : "keyword"
+          "type" : "float"
         },
         "PM10" : {
-          "type" : "keyword"
+          "type" : "float"
         },
         "SO2" : {
-          "type" : "keyword"
+          "type" : "float"
         },
         "CO" : {
-          "type" : "keyword"
+          "type" : "float"
         },
         "O3" : {
-          "type" : "keyword"
+          "type" : "float"
         },
         "TRS" : {
-          "type" : "keyword"
+          "type" : "float"
         },
         "POH" : {
-          "type" : "keyword"
+          "type" : "float"
         }
 
       }
