@@ -1,0 +1,45 @@
+{
+  "settings" : {
+    "number_of_shards" : 1
+  },
+  "mappings" : {
+    "regional_data" : {
+      "properties" : {
+        "place" : {
+          "type" : "keyword"
+        },
+        "date" : {
+          "type" : "date"
+        },
+        "location" : {
+          "type" : "geo_point"
+        },
+        "NO" : {
+          "type" : "keyword"
+        },
+        "NO2" : {
+          "type" : "keyword"
+        },
+        "PM10" : {
+          "type" : "keyword"
+        },
+        "SO2" : {
+          "type" : "keyword"
+        },
+        "CO" : {
+          "type" : "keyword"
+        },
+        "O3" : {
+          "type" : "keyword"
+        },
+        "TRS" : {
+          "type" : "keyword"
+        },
+        "POH" : {
+          "type" : "keyword"
+        }
+
+      }
+    }
+  }
+}
