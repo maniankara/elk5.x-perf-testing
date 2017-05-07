@@ -1,0 +1,13 @@
+{
+  "query" : {
+    "bool" : {
+      "must" : [
+        { "term" : { "NO" : 17} },
+        {"term" : { "place" : "vallila"}}
+      ]
+    }
+  },
+  "aggs" : {
+    "avg_grade" : { "avg" : { "field" : "CO"}}
+  }
+}

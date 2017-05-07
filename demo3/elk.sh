@@ -25,6 +25,12 @@ function show {
     curl -X GET $host:9200/pollution?pretty;
 }
 
+function demo3 {
+    shift;
+    curl -X POST $host:9200/pollution/_search?pretty -d@aggs.json
+
+}
+
 function main {
     init
     if [ $1 = "new" -o $1 = "delete" -o $1 = "list" -o $1 = "show" -o $1 = "demo3" -o $1 = "load" ]; then
