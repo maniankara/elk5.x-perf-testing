@@ -3,7 +3,7 @@ version: '2'
 services:
   logstash:
     volumes:
-      - ../demo1/logstash/logstash.conf:/usr/share/logstash/pipeline/logstash.conf
+      - ../demo1/logstash/logstash.conf:/etc/logstash/conf.d/logstash.conf
 
   web:
     build: ../demo1/nginx/
