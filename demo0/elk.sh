@@ -9,7 +9,7 @@ function docker_compose {
 function demo0 {
     docker_compose up -d
     sleep 1
-    docker_compose ps
+    docker_compose logs -f
 }
 
 main $*;

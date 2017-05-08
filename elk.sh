@@ -45,7 +45,7 @@ function delete {
 
 function main {
     init
-    if [ "$1" = "new" -o "$1" = "delete" -o "$1" = "list" -o "$1" = "show" -o "$1" = "demo0" ]; then
+    if [ "$1" = "new" -o "$1" = "delete" -o "$1" = "list" -o "$1" = "show" -o "$1" = "demo0" -o "$1" = "demo1" ]; then
         $1 $*;
     elif [ "$1" = "-h" -o "$1" = "--help" ]; then
         usage;

@@ -29,4 +29,4 @@ volumes:
 networks:
   default:
     external:
-      name: dockerelk_elk
+      name: dockerelk_docker_elk
